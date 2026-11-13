@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Speciaalbier Radar</title>
+  <meta name="description" content="Goedkope speciaalbieren bij supermarkten in de buurt: prijs per liter, alcohol% en prijs per liter alcohol.">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍺</text></svg>">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-inner">
+      <div>
+        <h1>🍺 Speciaalbier Radar</h1>
+        <p class="sub">Goedkope speciaalbieren bij supermarkten bij jou in de buurt</p>
+      </div>
+      <a id="chupitos" class="badge" href="https://chupitos.nl/locations/utrecht" target="_blank" rel="noopener">🥃 Chupitos Utrecht…</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="panel" id="locPanel">
+      <div class="loc-row">
+        <button id="btnLocate" class="btn primary">📍 Gebruik mijn locatie</button>
+        <form id="placeForm" class="place-form">
+          <input id="placeInput" type="search" placeholder="…of plaats / postcode" autocomplete="off">
+          <button class="btn" type="submit">Zoek</button>
+        </form>
+      </div>
+      <div class="loc-row">
+        <label class="radius">Straal <input id="radius" type="range" min="1" max="15" step="1" value="3"> <output id="radiusOut">3 km</output></label>
+        <span id="locStatus" class="muted">Nog geen locatie gekozen. Je kunt ook op de kaart klikken.</span>
+      </div>
+      <div id="map" aria-label="Kaart met supermarkten"></div>
+      <div id="chains" class="chains"></div>
+    </section>
+
+    <section class="panel filters" id="filters">
+      <input id="q" type="search" placeholder="Zoek bier of brouwerij">
+      <select id="style"><option value="">Alle stijlen</option></select>
+      <select id="unit"><option value="">Alle verpakkingen</option></select>
+      <select id="sort">
+        <option value="ppa">Sorteer: € per liter alcohol</option>
+        <option value="ppl">Sorteer: € per liter</option>
+        <option value="price">Sorteer: laagste prijs</option>
+        <option value="abv">Sorteer: alcohol % (hoog → laag)</option>
+        <option value="score">Sorteer: mijn score</option>
+        <option value="value">Sorteer: beste koop (score × €/L alc.)</option>
+        <option value="name">Sorteer: naam</option>
+      </select>
+      <label class="num">Min. alcohol <input id="minAbv" type="number" min="0" max="15" step="0.5" value="0"> %</label>
+      <label class="num">Max €/L <input id="maxPpl" type="number" min="0" step="1" placeholder="—"></label>
+      <label class="chk toggle"><input id="showPils" type="checkbox"> <span>Gewone pils meenemen</span></label>
+      <label class="chk"><input id="showStrong" type="checkbox"> Sterke pils (8.6, Atlas…)</label>
+      <label class="chk"><input id="showUnsure" type="checkbox"> Onzekere prijzen</label>
+      <label class="chk"><input id="onlyNearby" type="checkbox" checked> Alleen ketens in de buurt</label>
+      <label class="chk"><input id="onlyOpen" type="checkbox"> Alleen winkels die nu open zijn</label>
+    </section>
+
+    <p id="summary" class="muted summary"></p>
+    <div id="list" class="list"></div>
+
+    <footer class="foot muted">
+      <p>Prijzen: <a href="https://github.com/supermarkt/checkjebon" target="_blank" rel="noopener">checkjebon</a> (webshopprijzen per keten; acties en filiaalvoorraad niet inbegrepen).
+      Alcohol%: eigen catalogus, productnaam of <a href="https://world.openfoodfacts.org" target="_blank" rel="noopener">Open Food Facts</a>.
+      Winkels: © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>-bijdragers.
+      Openingstijden: OpenStreetMap (kunnen verouderd zijn; feestdagen niet meegenomen). Drukte: via de link naar Google Maps.
+      Scores zijn jouw eigen beoordelingen (opgeslagen in deze browser).</p>
+      <p id="dataDate"></p>
+    </footer>
+  </main>
+
+  <dialog id="krent" class="krent">
+    <img src="krent.jpg" alt="Serveerster met een grote pul bier">
+    <p>Goedkope krent, ga eens genieten van je bier.</p>
+    <form method="dialog"><button class="btn primary">Ja ja, proost 🍻</button></form>
+  </dialog>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="hours.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

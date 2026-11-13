@@ -1,0 +1,4 @@
+data/raw_supermarkets.json
+data/build.log
+__pycache__/
+.DS_Store
