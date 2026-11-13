@@ -3,7 +3,12 @@
 Webapp die laat zien welke speciaalbieren goedkoop te koop zijn bij supermarkten bij jou in de buurt.
 Per bier zie je de **prijs per liter**, het **alcoholpercentage** en de **prijs per liter pure alcohol**.
 
-## Starten
+**Live:** <https://basedoublebase.github.io/speciaalbier-radar/>
+
+De prijzen worden elke dag om 06:00 UTC automatisch ververst door een GitHub Action
+(`.github/workflows/update-data.yml`). Handmatig starten kan via het tabblad *Actions* → *Prijzen verversen* → *Run workflow*.
+
+## Lokaal starten
 
 ```bash
 ./start.sh
