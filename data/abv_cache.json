@@ -1,4 +1,5 @@
 {
+ "alfa-super": [],
  "arpus": [],
  "arpus-hopheart": [],
  "bavaria": [],
@@ -7,6 +8,23 @@
  "brand-garage": [],
  "brand-krachtig": [],
  "brand-neipa": [],
+ "brouwers": [
+  [
+   "bier brouwers",
+   4.8
+  ]
+ ],
+ "brouwers-premium": [],
+ "bud": [
+  [
+   "bud king of beet bud, bud king of beet",
+   5.0
+  ],
+  [
+   "light lime lager bud",
+   11.76
+  ]
+ ],
  "crew": [],
  "crew-republic": [],
  "hertog": [],
@@ -23,6 +41,7 @@
    4.0
   ]
  ],
+ "paix": [],
  "paix-dieu": [],
  "st": [],
  "st-pierre": [],
