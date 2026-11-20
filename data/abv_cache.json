@@ -38,6 +38,7 @@
  "gulden-draak": [],
  "gulpener": [],
  "gulpener-blond": [],
+ "gulpener-bock": [],
  "gulpener-ur": [],
  "gulpener-wintervrund": [],
  "hertog": [],
@@ -250,9 +251,17 @@
  "lefort": [],
  "lefort-tripel": [],
  "liefmans": [],
+ "liefmans-peach": [],
  "moersleutel": [],
  "moersleutel-ipa": [],
  "moersleutel-motor": [],
+ "oedipus": [
+  [
+   "mannenliefde oedipus",
+   6.0
+  ]
+ ],
+ "oedipus-gaia": [],
  "paix": [],
  "paix-dieu": [],
  "st": [],
