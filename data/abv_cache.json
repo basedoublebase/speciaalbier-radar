@@ -10,6 +10,33 @@
  "brand-garage": [],
  "brand-krachtig": [],
  "brand-neipa": [],
+ "brewdog": [
+  [
+   "pumpkin spiced ale brewdog",
+   5.1
+  ],
+  [
+   "morgane brewdog, morgane",
+   5.0
+  ],
+  [
+   "hazy jane brewdog",
+   5.0
+  ],
+  [
+   "dead pony club brewdog",
+   3.8
+  ],
+  [
+   " brewdog",
+   4.2
+  ],
+  [
+   "aldipa bier brewdog",
+   5.4
+  ]
+ ],
+ "brewdog-hazy": [],
  "brouwers": [
   [
    "bier brouwers",
@@ -31,9 +58,19 @@
  "crew-republic": [],
  "de": [],
  "de-klok": [],
+ "dutch": [],
+ "dutch-bargain": [],
+ "export": [
+  [
+   "export crushed lemon export",
+   10.0
+  ]
+ ],
+ "export-bier": [],
  "frontaal": [],
  "gebrouwen": [],
  "gebrouwen-door": [],
+ "grolsch-weizenbock": [],
  "gulden": [],
  "gulden-draak": [],
  "gulpener": [],
@@ -248,6 +285,7 @@
    6.6
   ]
  ],
+ "leffe-winterbier": [],
  "lefort": [],
  "lefort-tripel": [],
  "liefmans": [],
@@ -262,8 +300,54 @@
   ]
  ],
  "oedipus-gaia": [],
+ "oedipus-mannenliefde": [],
+ "oedipus-thai": [],
  "paix": [],
  "paix-dieu": [],
+ "peroni": [
+  [
+   "peroni nastro azzureo gluten free peroni, nastro azzurro",
+   5.1
+  ],
+  [
+   "peroni gran riserva peroni",
+   6.6
+  ],
+  [
+   "peroni peroni",
+   4.7
+  ],
+  [
+   "peroni peroni",
+   5.1
+  ],
+  [
+   "peroni gran riserva rossa peroni",
+   5.2
+  ],
+  [
+   "gran riserva puro malto peroni",
+   5.2
+  ],
+  [
+   "asahi asahi, peroni",
+   3.32
+  ],
+  [
+   "birra napoli peroni, g. b. p",
+   5.2
+  ],
+  [
+   "birra alcolica raffo peroni, birra peroni, raffo",
+   4.7
+  ],
+  [
+   "nastro azzurro italiana peroni",
+   5.0
+  ]
+ ],
+ "rodenbach": [],
+ "rodenbach-fruitage": [],
  "st": [],
  "st-pierre": [],
  "t": [],
@@ -274,5 +358,12 @@
    6.0
   ]
  ],
- "texels-tuunwal": []
+ "texels-bock": [],
+ "texels-springtij": [],
+ "texels-tuunwal": [],
+ "to": [],
+ "two-chefs": [],
+ "uiltje-great": [],
+ "val": [],
+ "val-dieu": []
 }
