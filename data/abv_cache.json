@@ -37,6 +37,7 @@
   ]
  ],
  "brewdog-hazy": [],
+ "brewdog-triple": [],
  "brouwers": [
   [
    "bier brouwers",
@@ -70,7 +71,16 @@
  "frontaal": [],
  "gebrouwen": [],
  "gebrouwen-door": [],
+ "gouden": [],
+ "grolsch": [
+  [
+   "gerijpte herfstbok grolsch",
+   5.2
+  ]
+ ],
  "grolsch-weizenbock": [],
+ "guilty": [],
+ "guilty-monkey": [],
  "gulden": [],
  "gulden-draak": [],
  "gulpener": [],
@@ -87,7 +97,9 @@
  ],
  "jopen": [],
  "jopen-4": [],
+ "jopen-blond": [],
  "jopen-blurred": [],
+ "jopen-ipa": [],
  "jopen-tripel": [],
  "kaapse": [],
  "kaapse-karel": [],
@@ -363,7 +375,9 @@
  "texels-springtij": [],
  "texels-tuunwal": [],
  "to": [],
+ "to-l": [],
  "two-chefs": [],
+ "uiltje": [],
  "uiltje-great": [],
  "val": [],
  "val-dieu": []
